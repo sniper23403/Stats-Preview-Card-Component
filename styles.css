@@ -65,6 +65,7 @@
     align-items: center;
     justify-content: center;
   }
+
   #container{
     background-color: var(--Dark-desaturated-blue);
     max-width: 60em;
@@ -74,49 +75,60 @@
     justify-content: center;
     flex-direction: row-reverse;
   }
+  /*image of the group of people working*/
     img{
     border-radius: 0em 1em 1em 0em;
     max-width: 29em;
-    margin-left: 40px;
-    filter: invert(3%) sepia(25%) saturate(1118%) hue-rotate(238deg) brightness(86%) contrast(99%);
+    margin-left: 2.5em;
+    filter: invert(3%) sepia(25%) saturate(1118%) hue-rotate(238deg) brightness(86%) contrast(99%) !important;
   }
+
+  /*Get insights that help your business grow.*/
   header{
     font-family: 'Inter',sans-serif;
     font-weight: 700;
     font-size: 2rem;
     color: var(--white);
-    margin-right: 15px;
-    padding-right: 15px;
+    margin-right: 0.6375em;
+    padding-right: 0.9375em;
   }
+
   .Stats{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding-top: 20px;
-    margin-top: 30px;
+    padding-top: 1.25em;
+    margin-top: 1.875em;
   }
+
   #text-container{
     padding: 1.5em;
-    padding: 20px 10px 20px 20px;
-    margin-left: 40px;
+    padding: 1.25em 0.625em 1.25em 1.25em;
+    margin-left: 2.5em;
   }
+
+  /*Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+            experience, and overall efficiency.*/
   .description{
     font-family: 'Inter',sans-serif;
     font-weight: 400;
     font-size: 0.8rem;
     color: var(--Slightly-transparent-white1);
-    margin-right: 35px;
-    padding-right: 35px;
-    padding-top: 15px;
+    margin-right: 2.1875em;
+    padding-right: 2.1875em;
+    padding-top: 0.9375em;
   }
+  /*style for the 'insights'*/
   b{
     color: var(--Soft-violet);
   }
+  /*numbers of the items*/
   span{
     font-family: 'Inter',sans-serif;
     font-weight: 700;
     font-size: 1.25rem;
     color: var(--white);
+    display: block;
   }
+
+  /*the items*/
   .Stats p{
     font-family: 'Lexend Deca',sans-serif;
     font-weight: 400;
@@ -124,6 +136,24 @@
     color: var(--Slightly-transparent-white2);
     text-transform: uppercase;
   }
+
+  ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    padding-left: 0em;
+  }
+
+  li{
+    padding-right: 3.25em;
+    font-family: 'Lexend Deca',sans-serif;
+    font-weight: 400;
+    font-size: 0.7rem;
+    color: var(--Slightly-transparent-white2);
+    text-transform: uppercase;
+  }
+
+    /* Extra small devices (phones, 600px and down) */
     @media screen and (max-width:450px) {   
         #container {
             flex-direction: column;
@@ -132,31 +162,65 @@
         header {
             font-size: 1.5rem;
             text-align: center;
-            margin-right: 0px;
+            margin-right: 0em;
             text-align: center;
-            line-height: 25px;
+            line-height: 1.5625em;
         }    
         img{
             border-radius: 0.5em 0.5em 0em 0em;
             max-width: 17em;
-            margin-bottom: 15px;
-            margin-left: 0px;
+            margin-bottom: 0.9375em;
+            margin-left: 0em;
         }
         .description{
-            margin: 0px;
-            padding: 5px;
-            line-height: 25px;
+            margin: 0em;
+            padding: 0.3125em;
+            line-height: 1.5625em;
             text-align: center;
         }
-        .Stats{
-            margin-top: 0px;
-            grid-template-columns: 1fr;
+        ul{
             text-align: center;
+            flex-direction: column;
         }
         #text-container{
-            margin-left: 0px;
+            margin-left: 0em;
+            padding-top: 0em;
         }
-        .Stats p{
-            padding-bottom: 20px;
+        .Stats li {
+            padding: 0em 0em 1.25em 0em;
         }
+        .Stats{
+          margin-top: 0em;
+        }
+    }
+
+    /* Medium devices (landscape tablets, 768px and 1000px)*/
+    @media screen and (max-width:1000px) and (min-width:768px) {
+        #container {
+          max-width: 46em !important;
+        }
+        img{
+          max-width: 21em;
+          margin-left: 2.25em !important;
+        }
+        #text-container{
+          margin-left: 1.125em;
+          padding-top: 0.6875em;
+        }
+        .Stats li {
+          padding-right: 1.75em;
+        }
+        .Stats{
+          margin-top: 0.375em ;
+        }
+        header{
+          font-size: 1.6rem;
+        }
+        li{
+          font-size: 0.6rem !important;
+        }
+        .description{
+          font-size: 0.7rem!important;
+        }
+
     }
