@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL:(https://www.frontendmentor.io/solutions/3column-card-component-3VwiEg4TE7)
-- Live Site URL:(https://sniper23403.github.io/3-Column-Card-Component/)
+- Solution URL:(https://www.frontendmentor.io/solutions/stats-preview-card-component-KIwgladVOM)
+- Live Site URL:(https://sniper23403.github.io/Stats-Preview-Card-Component/)
 
 ## My process
 
