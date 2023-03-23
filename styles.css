@@ -171,11 +171,13 @@
             margin-right: 0em;
             text-align: center;
             line-height: 1.5625em;
+            padding-top: 1rem;
         }    
+        #image-container{
+          border-radius: 0.5em 0.5em 0em 0em;
+        }
         img{
             border-radius: 0.5em 0.5em 0em 0em;
-            max-width: 17em;
-            margin-bottom: 0.9375em;
             margin-left: 0em;
         }
         .description{
@@ -204,10 +206,6 @@
     @media screen and (max-width:1000px) and (min-width:768px) {
         #container {
           max-width: 46em !important;
-        }
-        img{
-          max-width: 21em;
-          margin-left: 2.25em !important;
         }
         #text-container{
           margin-left: 1.125em;
