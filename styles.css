@@ -75,12 +75,18 @@
     justify-content: center;
     flex-direction: row-reverse;
   }
+    #image-container{
+      background-color: hsl(277, 64%, 61%);
+      width: 100%;
+      height: 100%;
+      border-radius: 0em 1em 1em 0em;
+    }
   /*image of the group of people working*/
     img{
     border-radius: 0em 1em 1em 0em;
-    max-width: 29em;
-    margin-left: 2.5em;
-    filter: invert(3%) sepia(25%) saturate(1118%) hue-rotate(238deg) brightness(86%) contrast(99%) !important;
+    object-fit: cover;
+    mix-blend-mode: multiply;
+    opacity: 0.8;
   }
 
   /*Get insights that help your business grow.*/
@@ -105,7 +111,7 @@
   }
 
   /*Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-            experience, and overall efficiency.*/
+   experience, and overall efficiency.*/
   .description{
     font-family: 'Inter',sans-serif;
     font-weight: 400;
